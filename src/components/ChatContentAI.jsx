@@ -3,16 +3,27 @@ import { useContext, useRef, useState } from "react";
 import ChatHeadersAI from "./ChatHeadersAI";
 import { FileImage, PaperPlaneTilt } from "@phosphor-icons/react";
 import { AppContext } from "../context/buble";
-import { MessageResponse as messageResponse } from "../data/message";
+import {
+  MessageResponse1,
+  MessageResponse2,
+  MessageResponse3,
+  MessageResponse4,
+  MessageResponse5,
+  MessageResponse6,
+  MessageResponse7,
+  MessageResponse8,
+} from "../data/message";
 
 const ChatContentAI = () => {
-  const { buble, setBuble, isTyping ,setIsTyping} = useContext(AppContext);
+  const { buble, setBuble, isTyping, setIsTyping } = useContext(AppContext);
   const messagesEndRef = useRef(null);
 
   const [formData, setFormData] = useState({
     message: "",
     file: null,
   });
+
+  const [conversationStep, setConversationStep] = useState(1);
 
   const handleChange = (e) => {
     setFormData((prev) => ({
@@ -52,14 +63,50 @@ const ChatContentAI = () => {
       file: null,
     });
 
-    messageResponse.forEach((msg, index) => {
+    let nextResponse;
+    switch (conversationStep) {
+      case 1:
+        nextResponse = MessageResponse1;
+        break;
+      case 2:
+        nextResponse = MessageResponse2;
+        break;
+      case 3:
+        nextResponse = MessageResponse3;
+        break;
+      case 4:
+        nextResponse = MessageResponse4;
+        break;
+      case 5:
+        nextResponse = MessageResponse5;
+        break;
+      case 6:
+        nextResponse = MessageResponse6;
+        break;
+      case 7:
+        nextResponse = MessageResponse7;
+        break;
+      case 8:
+        nextResponse = MessageResponse8;
+        break;
+      default:
+        nextResponse = [];
+    }
+
+    nextResponse.forEach((msg, index) => {
       setTimeout(() => {
         setBuble((prevMessages) => [...prevMessages, { ...msg }]);
-        if (index === messageResponse.length - 1) {
+        if (index === nextResponse.length - 1) {
           setIsTyping(false);
         }
       }, (index + 1) * 2000);
     });
+
+    setConversationStep((prevStep) => prevStep + 1);
+
+    if (conversationStep > 7) {
+      setConversationStep(1); // Reset ke awal jika mencapai akhir
+    }
   };
 
   return (
