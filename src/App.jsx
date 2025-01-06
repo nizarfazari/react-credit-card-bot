@@ -14,7 +14,7 @@ function App() {
           <img src="/logo/microsoft.png" onClick={startGetting} className="h-10 cursor-pointer" alt="" />
           <img src="/logo/cimb-niaga-logo.png" className="h-8" alt="" />
         </div>
-        <div className="bg-white shadow rounded-lg p-4 mt-8 mb-20">
+        <div className="bg-white shadow rounded-lg p-4 mt-8 mb-20 border-rose-500 border shadow-red-500">
           <div className="grid grid-cols-7">
             <ChatContentAI />
             <IconComponentAI />
