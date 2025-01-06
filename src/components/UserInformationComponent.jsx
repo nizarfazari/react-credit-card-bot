@@ -14,9 +14,9 @@ import { useContext, useEffect, useState } from "react";
 const userDetails = {
   policyName: "Direct-PruShield Life",
   expiryDate: "26 Dec 2024",
-  premium: "SGD 1,200",
+  premium: "30,000 MYR",
   renewalLikelihood: "High",
-  email: "adam@email.com",
+  email: "p.smith@outlook.com",
   phone: "+60 5432 3152",
   lastInteraction: "5 Dec 2024",
 };
@@ -37,7 +37,7 @@ const text = (
         <Phone size={20} weight="fill" className="text-gray-600" />
         <p>Phone</p>
       </div>
-      <p className="font-bold ">+65 1234 5678</p>
+      <p className="font-bold ">{userDetails.phone}</p>
     </div>
     <div className="flex justify-between items-center">
       <div className="flex items-center gap-3 font-semibold text-gray-600">

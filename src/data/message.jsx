@@ -38,7 +38,6 @@ export const MessageResponse1 = [
     ],
     time: new Date().toLocaleString(),
     photo: "/CustomerServiceAI.png",
-   
   },
   {
     sender: "Customer Service AI Agent",
@@ -69,13 +68,15 @@ export const MessageResponse2 = [
       "Received mobile number <span class='bg-black text-white px-2 py-[0.1rem] rounded-full'> +6054323152 </span> and fetching customer information and details.",
     photo: "/BackendAI.png",
     time: new Date().toLocaleString(),
-   
-  }, {
+  },
+  {
     sender: "Backend AI Agent",
     content:
       "Adding details to the form and sending it to the Customer Service Agent to obtain authorization from customer ID <span class='bg-black text-white px-2 py-[0.1rem] rounded-full'>5435432</span>.",
     photo: "/BackendAI.png",
     time: new Date().toLocaleString(),
+    icon: "policy",
+    imageIcon: "/filled-credit.png",
     insuranceData: true,
   },
   {
@@ -88,7 +89,6 @@ export const MessageResponse2 = [
     </p>
     `,
     photo: "/ProductAI.png",
-    imageIcon: "/filled-credit.png",
     icon: "whatsapp",
     time: new Date().toLocaleString(),
   },
@@ -105,7 +105,7 @@ export const MessageResponse3 = [
   {
     sender: "Product AI Agent",
     content:
-      "Ensure Adam is informed about the card’s benefits, such as complimentary airport lounge access and travel insurance coverage.  ",
+      "Ensure Mr.Smith is informed about the card’s benefits, such as complimentary <strong>airport lounge access and travel insurance coverage.</strong>",
     photo: "/ProductAI.png",
     time: new Date().toLocaleString(),
   },
@@ -118,14 +118,14 @@ export const MessageResponse3 = [
   {
     sender: "Customer Service AI Agent",
     content:
-      "Thank you, Adam. <strong>Your application has been approved.</strong> Your <a href='https://www.cimb.com.my/en/personal/day-to-day-banking/cards/credit-card/cimb-preferred-visa-infinite-credit-card.html' class='text-blue-500'>CIMB Preferred Visa Infinite Credit Card</a> will be delivered to your registered address within <strong>5-7 business days</strong>.",
+      "Thank you, Mr.Smith <strong>Your application has been approved.</strong> Your <a href='https://www.cimb.com.my/en/personal/day-to-day-banking/cards/credit-card/cimb-preferred-visa-infinite-credit-card.html' class='text-blue-500'>CIMB Preferred Visa Infinite Credit Card</a> will be delivered to your registered address within <strong>5-7 business days</strong>.",
     photo: "/CustomerServiceAI.png",
     time: new Date().toLocaleString(),
   },
   {
     sender: "Customer Service AI Agent",
     content:
-      "<i> Mr Smith, one recommendation, since you will be in US, Investing in global equities can provide diversification and potential growth. The Principal Global Sustainable Growth Fund focuses on companies with strong sustainability practices, aiming for long-term capital appreciation.</i>",
+      "<i> Mr Smith, one recommendation, since you will be in US, Investing in global equities can provide diversification and potential growth. <a class='https://www.cimb.com.my/en/personal/day-to-day-banking/cards/credit-card/cimb-preferred-visa-infinite-credit-card.html'>The Principal Global Sustainable Growth Fund</a> focuses on companies with strong sustainability practices, aiming for long-term capital appreciation.</i>",
     photo: "/CustomerServiceAI.png",
     time: new Date().toLocaleString(),
     icon: "whatsapp",
@@ -136,10 +136,12 @@ export const MessageResponse4 = [
   {
     sender: "Customer Service AI Agent",
     content: `
-      The <a href='https://www.cimb.com.my/en/personal/promotions/latest-promotions/principal-global-sustainable-growth-fund.html' class='text-blue-500'>Principal Global Sustainable Growth Fund</a> is an investment opportunity focusing on companies that demonstrate strong environmental, social, and governance (ESG) practices, aiming to provide sustainable long-term growth for investors. This fund is available through CIMB Malaysia.
+      <i>
+    The <a href='https://www.cimb.com.my/en/personal/promotions/latest-promotions/principal-global-sustainable-growth-fund.html' class='text-blue-500'>Principal Global Sustainable Growth Fund</a> is an investment opportunity focusing on companies that demonstrate strong environmental, social, and governance (ESG) practices, aiming to provide sustainable long-term growth for investors. This fund is available through CIMB Malaysia.
+      </i>
       `,
     photo: "/CustomerServiceAI.png",
-    icon: "policy",
+    icon: "whatsapp",
     imageIcon: "/investment.png",
     time: new Date().toLocaleString(),
   },
@@ -148,10 +150,15 @@ export const MessageResponse4 = [
 export const MessageResponse5 = [
   {
     sender: "Customer Service AI Agent",
-    content:
-      "<strong>Our pleasure, Adam!</strong> If you have <strong>further questions</strong> or need <strong>assistance in the future</strong>, feel free to <strong>reach out</strong>. We're here to help you.",
+    content: `
+      <p>
+        <i>
+        <strong>Our pleasure, Mr.Smith!</strong> If you have <strong>further questions</strong> or need <strong>assistance in the future</strong>, feel free to <strong>reach out</strong>. We're here to help you.
+        </i>
+      </p>
+      `,
     photo: "/CustomerServiceAI.png",
+    icon: "whatsapp",
     time: new Date().toLocaleString(),
   },
 ];
-

@@ -71,7 +71,10 @@ const BubleChat = ({ messages }) => {
                 <h1 className="text-lg font-medium ">{messages?.sender}</h1>
 
                 {messages?.icon === "policy" && (
-                  <ModalComponent modalTitle="Document">
+                  <ModalComponent
+                    modalTitle="Document"
+                    imageIcon={messages?.imageIcon}
+                  >
                     <img
                       src={`/modal/${messages?.imageIcon}`}
                       className="w-full"
