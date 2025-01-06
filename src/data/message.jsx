@@ -125,7 +125,7 @@ export const MessageResponse3 = [
   {
     sender: "Customer Service AI Agent",
     content:
-      "<i> Mr Smith, one recommendation, since you will be in US, Investing in global equities can provide diversification and potential growth. <a class='https://www.cimb.com.my/en/personal/day-to-day-banking/cards/credit-card/cimb-preferred-visa-infinite-credit-card.html'>The Principal Global Sustainable Growth Fund</a> focuses on companies with strong sustainability practices, aiming for long-term capital appreciation.</i>",
+      "<i> Mr Smith, one recommendation, since you will be in US, Investing in global equities can provide diversification and potential growth. <a class='https://www.cimb.com.my/en/personal/promotions/latest-promotions/principal-global-sustainable-growth-fund.html'>The Principal Global Sustainable Growth Fund</a> focuses on companies with strong sustainability practices, aiming for long-term capital appreciation.</i>",
     photo: "/CustomerServiceAI.png",
     time: new Date().toLocaleString(),
     icon: "whatsapp",
