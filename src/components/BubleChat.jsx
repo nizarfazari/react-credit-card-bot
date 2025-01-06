@@ -41,7 +41,7 @@ const BubleChat = ({ messages }) => {
     <>
       <div
         className={`flex ${
-          messages?.sender === "Adam" ? "flex-row-reverse" : ""
+          messages?.sender === "User" ? "flex-row-reverse" : ""
         } gap-4`}
       >
         {/* Icon */}
@@ -54,13 +54,13 @@ const BubleChat = ({ messages }) => {
         </div>
 
         {/* Handle Loading */}
-        {messages?.sender !== "Adam" && isLoading ? (
+        {messages?.sender !== "User" && isLoading ? (
           <p className="mt-2 thinking">Thinking...</p>
         ) : (
           <div className="w-fit">
             <div
               className={`w-fit rounded-lg px-4 py-2 shadow-2xl ${
-                messages?.sender === "Adam"
+                messages?.sender === "User"
                   ? "bg-blue-600 text-white"
                   : "bg-white "
               } ${
@@ -101,8 +101,8 @@ const BubleChat = ({ messages }) => {
                 )}
               </div>
 
-              {/* Handle Content Adam */}
-              {messages?.sender !== "Adam" ? (
+              {/* Handle Content User */}
+              {messages?.sender !== "User" ? (
                 Array.isArray(messages?.content) ? (
                   visibleContent.map((item, index) => (
                     <div

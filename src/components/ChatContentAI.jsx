@@ -48,7 +48,7 @@ const ChatContentAI = () => {
     e.preventDefault();
 
     const newMessage = {
-      sender: "Adam",
+      sender: "User",
       content: formData.message,
       time: new Date().toLocaleString(),
       photo: "/avatar.jpg",
