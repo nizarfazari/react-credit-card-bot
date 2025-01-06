@@ -110,3 +110,8 @@ html {
 .link-style:hover {
   color: #3498db; /* Slightly darker blue on hover */
 }
+
+
+.ant-modal {
+  width: 700px !important;
+}

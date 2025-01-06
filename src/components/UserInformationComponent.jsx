@@ -91,6 +91,7 @@ const InsuranceMetrix = (
   </div>
 );
 
+console.log(InsuranceMetrix)
 
 // const items1 = [
 //   {
