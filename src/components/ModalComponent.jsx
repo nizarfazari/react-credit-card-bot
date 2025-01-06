@@ -10,6 +10,7 @@ const ModalComponent = ({
   onOk,
   onCancel,
   iconType = "file", // Properti untuk menentukan jenis ikon
+  imageIcon,
 }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const { incrementActionCount } = useContext(AppContext);
@@ -54,15 +55,20 @@ const ModalComponent = ({
     ), // Ikon Email
   };
 
-  
-
   return (
     <>
       {/* Ikon yang ditampilkan sesuai `iconType` */}
-      <div onClick={showModal}>
-        {iconMapping[iconType] || iconMapping.file}{" "}
-        {/* Default ke file jika tidak ditemukan */}
-      </div>
+      {imageIcon ? (
+        <div onClick={showModal}>
+          {iconMapping[iconType] || iconMapping.file}{" "}
+          {/* Default ke file jika tidak ditemukan */}
+        </div>
+      ) : (
+        <div >
+          {iconMapping[iconType] || iconMapping.file}{" "}
+          {/* Default ke file jika tidak ditemukan */}
+        </div>
+      )}
 
       <Modal
         title={modalTitle}
