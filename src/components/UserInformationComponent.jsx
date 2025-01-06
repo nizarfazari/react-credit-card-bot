@@ -16,8 +16,8 @@ const userDetails = {
   expiryDate: "26 Dec 2024",
   premium: "SGD 1,200",
   renewalLikelihood: "High",
-  email: "diomendesk@email.com",
-  phone: "+65 1234 5678",
+  email: "adam@email.com",
+  phone: "+60 5432 3152",
   lastInteraction: "5 Dec 2024",
 };
 
@@ -38,6 +38,13 @@ const text = (
         <p>Phone</p>
       </div>
       <p className="font-bold ">+65 1234 5678</p>
+    </div>
+    <div className="flex justify-between items-center">
+      <div className="flex items-center gap-3 font-semibold text-gray-600">
+        <Trophy weight="fill" size={20} className="text-gray-600" />
+        <p>Annual Income</p>
+      </div>
+      <p className="font-bold ">{userDetails.premium}</p>
     </div>
     <div className="flex justify-between items-center">
       <div className="flex items-center gap-3 font-semibold text-gray-600">
@@ -84,18 +91,19 @@ const InsuranceMetrix = (
   </div>
 );
 
-const items1 = [
-  {
-    key: "1",
-    label: <span className="font-bold">Insurance Details</span>,
-    children: InsuranceMetrix,
-  },
-];
+
+// const items1 = [
+//   {
+//     key: "1",
+//     label: <span className="font-bold">Insurance Details</span>,
+//     children: InsuranceMetrix,
+//   },
+// ];
 
 const items2 = [
   {
     key: "2",
-    label: <span className="font-bold">Client Information</span>,
+    label: <span className="font-bold">Profile Information</span>,
     children: text,
   },
 ];
@@ -134,13 +142,13 @@ const UserInformationComponent = () => {
       ) : (
         hasInsuranceData && (
           <>
-            <Collapse
+            {/* <Collapse
               items={items1}
               size="large"
               className="mb-4"
               bordered={false}
               defaultActiveKey={["1"]}
-            />
+            /> */}
 
             <Collapse
               items={items2}

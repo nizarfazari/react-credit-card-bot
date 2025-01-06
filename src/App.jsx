@@ -11,8 +11,8 @@ function App() {
     <>
       <div className="container ">
         <div className="flex justify-between items-center mt-5">
-          <img src="/logo/black.webp" onClick={startGetting} className="h-10 cursor-pointer" alt="" />
-          <img src="/logo/logo-prudent.png" className="h-10" alt="" />
+          <img src="/logo/microsoft.png" onClick={startGetting} className="h-10 cursor-pointer" alt="" />
+          <img src="/logo/cimb-niaga-logo.png" className="h-8" alt="" />
         </div>
         <div className="bg-white shadow rounded-lg p-4 mt-8 mb-20">
           <div className="grid grid-cols-7">

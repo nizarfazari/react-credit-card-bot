@@ -4,14 +4,10 @@ import ChatHeadersAI from "./ChatHeadersAI";
 import { FileImage, PaperPlaneTilt } from "@phosphor-icons/react";
 import { AppContext } from "../context/buble";
 import {
-  MessageResponse1,
   MessageResponse2,
   MessageResponse3,
   MessageResponse4,
   MessageResponse5,
-  MessageResponse6,
-  MessageResponse7,
-  MessageResponse8,
 } from "../data/message";
 
 const ChatContentAI = () => {
@@ -52,7 +48,7 @@ const ChatContentAI = () => {
     e.preventDefault();
 
     const newMessage = {
-      sender: "User",
+      sender: "Adam",
       content: formData.message,
       time: new Date().toLocaleString(),
       photo: "/avatar.jpg",
@@ -66,28 +62,16 @@ const ChatContentAI = () => {
     let nextResponse;
     switch (conversationStep) {
       case 1:
-        nextResponse = MessageResponse1;
-        break;
-      case 2:
         nextResponse = MessageResponse2;
         break;
-      case 3:
+      case 2:
         nextResponse = MessageResponse3;
         break;
-      case 4:
+      case 3:
         nextResponse = MessageResponse4;
         break;
-      case 5:
+      case 4:
         nextResponse = MessageResponse5;
-        break;
-      case 6:
-        nextResponse = MessageResponse6;
-        break;
-      case 7:
-        nextResponse = MessageResponse7;
-        break;
-      case 8:
-        nextResponse = MessageResponse8;
         break;
       default:
         nextResponse = [];
@@ -117,10 +101,10 @@ const ChatContentAI = () => {
           {buble.map(
             (message, index) =>
               message && (
-                <>
+                <div key={index}>
                   <BubleChat key={index} messages={message} />
                   <div ref={messagesEndRef} />
-                </>
+                </div>
               )
           )}
 

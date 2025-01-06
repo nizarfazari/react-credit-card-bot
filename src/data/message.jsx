@@ -1,9 +1,57 @@
 export const MessageResponse1 = [
   {
     sender: "Customer Service AI Agent",
-    content:
-      "The CIMB Travel World Elite Credit Card is an excellent choice for international transactions. It offers no additional markup fees on overseas spending, ensuring you get competitive exchange rates",
+    content: "Checking for WhatsApp messages from customers",
     photo: "/CustomerServiceAI.png",
+    time: new Date().toLocaleString(),
+  },
+  {
+    sender: "Customer Service AI Agent",
+    content: `
+    Found 1 message from number <span class='bg-black text-white px-2 py-[0.1rem] rounded-full'> +6054323151 </span>
+    
+    <p class='mt-3'>
+      <i>
+      Hi, I’m planning  to work for a project in the U.S. for the next six month and I want to know which CIMB card offers the best exchange rates.
+      </i>
+    </p>
+    `,
+    icon: "whatsapp",
+    photo: "/CustomerServiceAI.png",
+    time: new Date().toLocaleString(),
+  },
+  {
+    sender: "Customer Service AI Agent",
+    content: [
+      {
+        content: "<div class='min-w-[380px]'> Checking Relevant Product </div",
+        isChecking: false,
+      },
+      {
+        content: "1. Destination Country = USA",
+        isChecking: true,
+      },
+      {
+        content: "2. Query = 'Card that offers the best exchange rates'",
+        isChecking: true,
+      },
+    ],
+    time: new Date().toLocaleString(),
+    photo: "/CustomerServiceAI.png",
+   
+  },
+  {
+    sender: "Customer Service AI Agent",
+    content: `Creating WhatsApp Message Response
+    <p class='mt-3'>
+    <i>
+    The <a href='https://www.cimb.com.my/en/personal/day-to-day-banking/cards/credit-card/cimb-preferred-visa-infinite-credit-card.html' class='text-blue-500'>CIMB Preferred Visa Infinite Credit Card</a> provides <strong>preferential foreign exchange rates</strong> for its users, which can lead to savings on currency conversions and it is an excellent choice for international transactions. It offers no additional markup fees on overseas spending, ensuring you get competitive exchange rates.  
+    </i>
+    </p>
+    `,
+    photo: "/CustomerServiceAI.png",
+    imageIcon: "/credit-card.png",
+    icon: "whatsapp",
     time: new Date().toLocaleString(),
   },
 ];
@@ -11,15 +59,47 @@ export const MessageResponse2 = [
   {
     sender: "Customer Service AI Agent",
     content:
-      " I can assist with your application. Please provide your full name, contact information, and annual income to proceed.",
+      "I can assist with your application. Let me fetch your Customer Information from your mobile number : <span class='bg-black text-white px-2 py-[0.1rem] rounded-full'> +6054323152 </span>",
     photo: "/CustomerServiceAI.png",
     time: new Date().toLocaleString(),
   },
   {
     sender: "Backend AI Agent",
     content:
-      "Received Adam’s details. Processing application for the CIMB Travel World Elite Credit Card.",
+      "Received mobile number <span class='bg-black text-white px-2 py-[0.1rem] rounded-full'> +6054323152 </span> and fetching customer information and details.",
     photo: "/BackendAI.png",
+    time: new Date().toLocaleString(),
+   
+  }, {
+    sender: "Backend AI Agent",
+    content:
+      "Adding details to the form and sending it to the Customer Service Agent to obtain authorization from customer ID <span class='bg-black text-white px-2 py-[0.1rem] rounded-full'>5435432</span>.",
+    photo: "/BackendAI.png",
+    time: new Date().toLocaleString(),
+    insuranceData: true,
+  },
+  {
+    sender: "Product AI Agent",
+    content: `Creating WhatsApp to customer id <span class='bg-black text-white px-2 py-[0.1rem] rounded-full'>5435432</span>
+     <p class='mt-3'>
+    <i>
+    Mr Smith, <strong>(Customer id 5435432)</strong> please find the application with the infromation filled up as per your request. Please review and approve through WhatsApp message.   
+    </i>
+    </p>
+    `,
+    photo: "/ProductAI.png",
+    imageIcon: "/filled-credit.png",
+    icon: "whatsapp",
+    time: new Date().toLocaleString(),
+  },
+];
+
+export const MessageResponse3 = [
+  {
+    sender: "Customer Service AI Agent",
+    content:
+      "Processing application for the CIMB Preferred Visa Infinite Credit Card",
+    photo: "/CustomerServiceAI.png",
     time: new Date().toLocaleString(),
   },
   {
@@ -31,24 +111,21 @@ export const MessageResponse2 = [
   },
   {
     sender: "Backend AI Agent",
-    content: "Application approved. Card issuance initiated.",
+    content: "Application <strong>approved</strong>. Card issuance initiated.",
     photo: "/BackendAI.png",
     time: new Date().toLocaleString(),
   },
   {
     sender: "Customer Service AI Agent",
     content:
-      "Thank you, Adam. Your application has been approved. Your CIMB Travel World Elite Credit Card will be delivered to your registered address within 5-7 business days.",
+      "Thank you, Adam. <strong>Your application has been approved.</strong> Your <a href='https://www.cimb.com.my/en/personal/day-to-day-banking/cards/credit-card/cimb-preferred-visa-infinite-credit-card.html'>CIMB Preferred Visa Infinite Credit Card</a> will be delivered to your registered address within <strong>5-7 business days</strong>.",
     photo: "/CustomerServiceAI.png",
     time: new Date().toLocaleString(),
   },
-];
-
-export const MessageResponse3 = [
   {
     sender: "Customer Service AI Agent",
     content:
-      "Certainly. With the CIMB Travel World Elite Credit Card, all foreign currency transactions, including USD, are processed without additional markup fees. This means your purchases are converted at the prevailing Mastercard exchange rates, offering you favorable rates for your U.S. expenses.  ",
+      "<i> Mr Smith, one recommendation, since you will be in US, Investing in global equities can provide diversification and potential growth. The Principal Global Sustainable Growth Fund focuses on companies with strong sustainability practices, aiming for long-term capital appreciation.</i>",
     photo: "/CustomerServiceAI.png",
     time: new Date().toLocaleString(),
   },
@@ -57,9 +134,12 @@ export const MessageResponse3 = [
 export const MessageResponse4 = [
   {
     sender: "Customer Service AI Agent",
-    content:
-      "Investing in global equities can provide diversification and potential growth. The Principal Global Sustainable Growth Fund focuses on companies with strong sustainability practices, aiming for long-term capital appreciation.  ",
+    content: `
+      The <a href='https://www.cimb.com.my/en/personal/promotions/latest-promotions/principal-global-sustainable-growth-fund.html'>Principal Global Sustainable Growth Fund</a> is an investment opportunity focusing on companies that demonstrate strong environmental, social, and governance (ESG) practices, aiming to provide sustainable long-term growth for investors. This fund is available through CIMB Malaysia.
+      `,
     photo: "/CustomerServiceAI.png",
+    icon: "policy",
+    imageIcon: "/investment.png",
     time: new Date().toLocaleString(),
   },
 ];
@@ -68,76 +148,9 @@ export const MessageResponse5 = [
   {
     sender: "Customer Service AI Agent",
     content:
-      "To initiate the investment, please confirm that you’ve reviewed the terms and conditions and understand the associated risks.",
-    photo: "/CustomerServiceAI.png",
-    time: new Date().toLocaleString(),
-  },
-  {
-    sender: "Backend AI Agent",
-    content: "Preparing investment documentation for Adam’s review.",
-    photo: "/BackendAI.png",
-    time: new Date().toLocaleString(),
-  },
-  {
-    sender: "Product AI Agent",
-    content:
-      "Ensure Adam receives information on the fund’s performance and sustainability criteria.  ",
-    photo: "/ProductAI.png",
-    time: new Date().toLocaleString(),
-  },
-  {
-    sender: "Backend AI Agent",
-    content: "Documentation ready. Awaiting Adam’s confirmation to proceed.",
-    photo: "/BackendAI.png",
-    time: new Date().toLocaleString(),
-  },
-];
-
-export const MessageResponse6 = [
-  {
-    sender: "Customer Service AI Agent",
-    content:
-      "Excellent. Your investment of MYR 250,000 in the Principal Global Sustainable Growth Fund has been initiated. For security, please confirm this transaction via the VoiceBot.  ",
+      "<strong>Our pleasure, Adam!</strong> If you have <strong>further questions</strong> or need <strong>assistance in the future</strong>, feel free to <strong>reach out</strong>. We're here to help you.",
     photo: "/CustomerServiceAI.png",
     time: new Date().toLocaleString(),
   },
 ];
 
-export const MessageResponse7 = [
-  {
-    sender: "Backend AI Agent",
-    content: "Investment transaction confirmed. Funds transfer in progress.",
-    photo: "/BackendAI.png",
-    time: new Date().toLocaleString(),
-  },
-  {
-    sender: "Product AI Agent",
-    content:
-      "Monitor the investment and provide Adam with regular performance updates.",
-    photo: "/ProductAI.png",
-    time: new Date().toLocaleString(),
-  },
-  {
-    sender: "Backend AI Agent",
-    content: "Funds successfully transferred. Investment complete.",
-    photo: "/BackendAI.png",
-    time: new Date().toLocaleString(),
-  },
-  {
-    sender: "Customer Service AI Agent",
-    content:
-      "Thank you, Adam. Your investment is now complete, and the funds have been successfully transferred.",
-    photo: "/CustomerServiceAI.png",
-    time: new Date().toLocaleString(),
-  },
-];
-
-export const MessageResponse8 = [
-  {
-    sender: "Customer Service AI Agent",
-    content:
-      "Our pleasure, Adam. If you have further questions or need assistance in the future, feel free to reach out.",
-    photo: "/CustomerServiceAI.png",
-    time: new Date().toLocaleString(),
-  },
-];

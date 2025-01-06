@@ -11,10 +11,10 @@
 html {
   background: linear-gradient(
     to bottom right,
-    #8fcef9,
-    #ddefff,
-    #c9e5fc,
-    #d1e9fc
+    #c8c8c8,
+    #c0c0c0,
+    #e5e4e4,
+    #ffffff
   );
   background-size: cover;
   background-repeat: no-repeat;
