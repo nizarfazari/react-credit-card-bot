@@ -98,7 +98,7 @@ export const MessageResponse3 = [
   {
     sender: "Customer Service AI Agent",
     content:
-      "Processing application for the CIMB Preferred Visa Infinite Credit Card",
+      "Processing application for the <a href='https://www.cimb.com.my/en/personal/day-to-day-banking/cards/credit-card/cimb-preferred-visa-infinite-credit-card.html' class='text-blue-500'>CIMB Preferred Visa Infinite Credit Card</a>",
     photo: "/CustomerServiceAI.png",
     time: new Date().toLocaleString(),
   },
@@ -118,7 +118,7 @@ export const MessageResponse3 = [
   {
     sender: "Customer Service AI Agent",
     content:
-      "Thank you, Adam. <strong>Your application has been approved.</strong> Your <a href='https://www.cimb.com.my/en/personal/day-to-day-banking/cards/credit-card/cimb-preferred-visa-infinite-credit-card.html'>CIMB Preferred Visa Infinite Credit Card</a> will be delivered to your registered address within <strong>5-7 business days</strong>.",
+      "Thank you, Adam. <strong>Your application has been approved.</strong> Your <a href='https://www.cimb.com.my/en/personal/day-to-day-banking/cards/credit-card/cimb-preferred-visa-infinite-credit-card.html' class='text-blue-500'>CIMB Preferred Visa Infinite Credit Card</a> will be delivered to your registered address within <strong>5-7 business days</strong>.",
     photo: "/CustomerServiceAI.png",
     time: new Date().toLocaleString(),
   },
@@ -128,6 +128,7 @@ export const MessageResponse3 = [
       "<i> Mr Smith, one recommendation, since you will be in US, Investing in global equities can provide diversification and potential growth. The Principal Global Sustainable Growth Fund focuses on companies with strong sustainability practices, aiming for long-term capital appreciation.</i>",
     photo: "/CustomerServiceAI.png",
     time: new Date().toLocaleString(),
+    icon: "whatsapp",
   },
 ];
 
@@ -135,7 +136,7 @@ export const MessageResponse4 = [
   {
     sender: "Customer Service AI Agent",
     content: `
-      The <a href='https://www.cimb.com.my/en/personal/promotions/latest-promotions/principal-global-sustainable-growth-fund.html'>Principal Global Sustainable Growth Fund</a> is an investment opportunity focusing on companies that demonstrate strong environmental, social, and governance (ESG) practices, aiming to provide sustainable long-term growth for investors. This fund is available through CIMB Malaysia.
+      The <a href='https://www.cimb.com.my/en/personal/promotions/latest-promotions/principal-global-sustainable-growth-fund.html' class='text-blue-500'>Principal Global Sustainable Growth Fund</a> is an investment opportunity focusing on companies that demonstrate strong environmental, social, and governance (ESG) practices, aiming to provide sustainable long-term growth for investors. This fund is available through CIMB Malaysia.
       `,
     photo: "/CustomerServiceAI.png",
     icon: "policy",
